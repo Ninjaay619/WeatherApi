@@ -131,11 +131,11 @@
 
                 const weather = data.weather;
 
-                box.style.display = "block";
                 box.innerHTML = `
                     <strong>📍 地點：</strong> ${data.location}<br>
                     <strong>🌦 天氣狀況：</strong> ${weather.Wx || "—"}<br>
-                    <strong>🌡 溫度：</strong> ${weather.T || "—"}<br>
+                    <strong>🌡 溫度：</strong>
+                        ${weather.MinT || "—"} ~ ${weather.MaxT || "—"}<br>
                     <strong>💧 降雨機率：</strong> ${weather.PoP || "—"}<br>
                     <strong>🌫 體感：</strong> ${weather.CI || "—"}
                 `;
