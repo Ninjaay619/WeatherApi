@@ -131,6 +131,7 @@
 
                 const weather = data.weather;
 
+                box.style.display = "block";
                 box.innerHTML = `
                     <strong>📍 地點：</strong> ${data.location}<br>
                     <strong>🌦 天氣狀況：</strong> ${weather.Wx || "—"}<br>
